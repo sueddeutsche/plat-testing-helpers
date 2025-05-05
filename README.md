@@ -24,3 +24,9 @@ var _ = Describe("my test context", func() {
 ```shell
 go mod tidy && go test
 ```
+
+## Update to new mod version
+
+```shell
+go get github.com/sueddeutsche/plat-testing-helpers@latest
+```
