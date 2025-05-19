@@ -1,0 +1,14 @@
+name: gitleaks
+on:
+  push: {}
+jobs:
+  gitleaks:
+    name: Run gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      uses: gitleaks/gitleaks-action@v2
+      with:
+        fetch-depth: 0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
