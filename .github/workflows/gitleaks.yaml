@@ -4,7 +4,7 @@ on:
 jobs:
   gitleaks:
     name: Run gitleaks
-    runs-on: ["ghcr.io/cirruslabs/ubuntu-runner-amd64:22.04-sm", "low-priority"]
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v4
         with:
