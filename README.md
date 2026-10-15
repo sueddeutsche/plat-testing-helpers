@@ -1,6 +1,9 @@
 # Ginkgo testing helpers
 Ginkgo testing helpers to make infrastructure tests simpler and more comprehensible.
 
+## Info
+This module is used by Helm and Terraform tests. Therefore this repository is public.
+
 ## Usage
 
 Import this module into your Ginkgo/Gomega based testing suites.
